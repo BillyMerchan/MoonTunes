@@ -1,0 +1,47 @@
+.escapeMenuContainer {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background: rgba(215, 214, 214, 0.03);
+    animation: floatIn;
+    animation-fill-mode: forward;
+    animation-duration:.7s
+}
+
+@keyframes floatIn {
+    0% {opacity: 0}
+    100% { opacity: 1}
+
+}
+
+.aboutLink {
+    position: absolute;
+    left:10px;
+    top:10px;
+    font-size: 30px;
+    padding-top:0;
+    margin-top:0;
+}
+
+.aboutLink:hover {
+    animation-name: fontGrow;
+    animation-fill-mode: forward;
+    animation-duration: .5s;
+    font-size:39px;
+}
+
+@keyframes fontGrow {
+    0% {font-size: 30px;}
+    100% {font-size:39px;}
+}
+
+.gitLink {
+    position: absolute;
+    right:0;
+    top:0;
+    width: 100px;
+    height: 100px;
+
+}
