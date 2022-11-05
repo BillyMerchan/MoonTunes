@@ -1,4 +1,8 @@
 .Page {
+    background-image: "./space.jpg";
+    background-size: cover;
+    width:100vw;
+    height:100vh;
     align-items:center;
     align-content:center;
     text-align:center;
@@ -24,6 +28,7 @@
 }
 
 .Body {
+
     margin-left:25vw;
     align-content:center;
     align-items:center;
