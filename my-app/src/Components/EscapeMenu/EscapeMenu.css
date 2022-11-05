@@ -10,6 +10,24 @@
     animation-duration:.7s
 }
 
+.escapeMenuClose {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background: rgba(215, 214, 214, 0.03);
+    animation: floatOut;
+    animation-fill-mode: forward;
+    animation-duration:.7s;
+    opacity:0;
+}
+
+@keyframes floatOut {
+    0%{opacity:1;}
+    100%{opacity: 0;}
+}
+
 @keyframes floatIn {
     0% {opacity: 0}
     100% { opacity: 1}
