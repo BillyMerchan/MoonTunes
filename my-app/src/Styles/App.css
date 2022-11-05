@@ -1,3 +1,11 @@
+*{
+  overflow:hidden;
+}
+
+.body{
+  overflow:hidden;
+}
+
 .App {
   background-image: url(./space.jpg);
   background-size:cover;
@@ -5,7 +13,52 @@
   height:100vh;
   text-align: center;
   background-repeat: no-repeat;
+  overflow:hidden;
 }
+
+.canvas {
+  overflow:hidden;
+  width:100vw;
+  height:100vh;
+}
+
+.com1 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: com1;
+  animation-duration:1.3s;
+  animation-fill-mode: forwards;
+  right:-20;
+  top:-20;
+  overflow:hidden;
+  transform: rotate(30deg);
+}
+
+@keyframes com1 {
+  0%{top:0;
+     right:-20vw;
+    }
+  100%{top:40vh;
+       right:110vw;}
+}
+
+
+.com2 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: com1;
+  animation-duration:1.3s;
+  animation-fill-mode: forwards;
+  right:-20;
+  top:-20;
+  overflow:hidden;
+  transform: rotate(30deg);
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -26,6 +79,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow:hidden;
 }
 
 .App-link {

@@ -1,6 +1,7 @@
 import './Styles/App.css';
 import {Howl} from 'howler';
 import EscapeMenu from './Components/EscapeMenu/EscapeMenu.js'
+import React from "react"
 
 import Decending from "./sounds/decending_wavy.mp3"
 import DrumSynth from "./sounds/drum_synth.mp3"
@@ -23,17 +24,34 @@ import wavy2 from "./sounds/wavy_ambient2.mp3"
 import wavy3 from "./sounds/wavy.mp3"
 import whistle from "./sounds/whistle.mp3"
 
+import com1 from "./Images/comet1.svg"
+import com2 from "./Images/comet2.svg"
+import pla1 from "./Images/planet1.svg"
+import pla2 from "./Images/planet2.svg"
 
 function App() {
+
+const [isShowingCom1, setShowingCom1] = React.useState(false);
+const [isShowingCom2, setShowingCom2] = React.useState(false);
+const [isShowingPla1, setShowingPla1] = React.useState(false);
+const [isShowingPla2, setShowingPla2] = React.useState(false);
 
   document.addEventListener('keydown', function(event) {
     var AudioPlay;
     switch(event.key) {
       case 'q':
         AudioPlay = new Audio (vocalC);
+        if(!isShowingCom1){
+          setShowingCom1(true);
+          setTimeout(function(){setShowingCom1(false); }, 4000);
+        }
         break;
       case 'w':
         AudioPlay = new Audio (vocalD);
+        if(!isShowingCom2){
+          setShowingCom2(true);
+          setTimeout(function(){setShowingCom2(false); }, 4000);
+        }
         break;
       case 'e':
         AudioPlay = new Audio (vocalE);
@@ -49,6 +67,10 @@ function App() {
         break;  
       case 'u':
         AudioPlay = new Audio (vocalB);
+        if(!isShowingPla1) {
+          setShowingPla1(true);
+          setTimeout(function(){setShowingPla1(false);}, 4000);
+        }
         break;
       case 'i':
         AudioPlay = new Audio (wavy1);
@@ -98,6 +120,17 @@ function App() {
     <div className="App">
       <header className="App-header">
       <EscapeMenu/>
+        <div class="canvas">
+          {isShowingCom1 ? (<img class="com1" src={com1}/>
+          ) : (<p></p>)}
+          {isShowingCom2 ? (<img class="com2" src={com2}/>
+          ) : (<p></p>)}
+          {isShowingPla1 ? (<img class="pla1" src={pla1}/>
+          ) : (<p></p>)}
+          {isShowingPla2 ? (<img class="pla2" src={pla2}/>
+          ) : (<p></p>)}
+
+        </div>
       </header>
     </div>
   );
