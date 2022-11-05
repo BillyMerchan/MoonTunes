@@ -25,6 +25,7 @@ import whistle from "./sounds/whistle.mp3"
 
 
 function App() {
+
   document.addEventListener('keydown', function(event) {
     var AudioPlay;
     switch(event.key) {
