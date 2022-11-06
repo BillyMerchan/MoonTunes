@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import gitLogo from './github.png'
 import keebLegend from './keyboard_outline.svg'
 import './EscapeMenu.css'
-
+import { Outlet, Link } from 'react-router-dom'
 
 const EscapeMenu = () => {
 
@@ -28,7 +28,7 @@ return () => {
     <div>
       {open && <div class="escapeMenuContainer">
                 <div class="aboutLink">
-                  <h1 class="aboutLink">About</h1>
+                  <h1 class="aboutLink"> <Link to="/About"> About </Link> </h1>
                 </div>
                 <a href="https://github.com/BillyMerchan/SpaceVis_HACKRPI2022">
                   <img src={gitLogo} alt="github.com/BillyMerchan/SpaceVis_HACKRPI2022" width="100" height="100" class="gitLink"/>
