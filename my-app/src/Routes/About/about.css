@@ -1,0 +1,72 @@
+.Page {
+    align-items:center;
+    align-content:center;
+    text-align:center;
+    animation: slowFadeIn;
+    animation-fill-mode:forwards;
+    animation-duration: 1.6s;
+}
+
+@keyframes slowFadeIn{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+
+.ourLinks {
+    text-align:center;
+    color:white;
+}
+
+.header {
+    display:inline-block;
+    top:0;
+    color:white;
+}
+
+.Body {
+    margin-left:25vw;
+    align-content:center;
+    align-items:center;
+    text-align:center;
+    border-style:solid;
+    border-color:white;
+    width:50vw;
+    border-radius: 40px;
+    padding:20px;
+}
+
+.abt {
+    color:white;
+    font-size:3.5vh;
+    width:50vw;
+    text-align:center;
+}
+
+.homeico {
+    top:30px;
+    left:30px;
+    scale:3;
+    position:absolute;
+    filter: invert(100%);
+}
+
+.gitLink {
+    position: absolute;
+    right:20px;
+    top:20px;
+    width: 60px;
+    height: 60px;
+    filter: invert(100%);
+}
+
+.homeico:hover{
+    scale:3.5;
+    animation-name: homeLogoGrow;
+    animation-duration: .5s;
+    animation-fill-mode:forward;
+}
+
+@keyframes homeLogoGrow {
+    0% {scale: 3}
+    100% {scale: 3.5}
+}
