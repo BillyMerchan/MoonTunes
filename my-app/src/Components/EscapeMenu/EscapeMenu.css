@@ -39,9 +39,46 @@
 
 .gitLink {
     position: absolute;
-    right:0;
-    top:0;
-    width: 100px;
-    height: 100px;
+    right:20px;
+    top:20px;
+    width: 60px;
+    height: 60px;
+    filter: invert(100%);
+}
 
+.gitLink:hover {
+    width:65px;
+    height:65px;
+    animation-name: logoGrow;
+    animation-duration: .5s;
+    animation-fill-mode:forward;
+}
+
+@keyframes logoGrow {
+    0%{width: 60px;
+       height:60px;
+      };
+    100%{width:65px;
+         height:65px;
+        }
+}
+
+.escPrompt {
+    opacity:0;
+    position:absolute;
+    font-size: 50px;
+    top:80vh;
+    left:50%;
+    margin-left:-250px;
+    animation-name: slowFadeIn;
+    animation-duration:3s;
+    animation-delay:2s;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes slowFadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
