@@ -16,3 +16,6 @@ Since we only really needed a front-end application, we decided to go with react
 Moon Tunes is a pretty simple concept but that's what makes it great! As of right now, the first two rows of your keyboard are each synced to a different sound. They are also group into a few categories to make it easier to construct tiny little melodies. As you press on your keyboard, planets and stars will shoot across the screen and give you your very own cosmic show!
 
 Below are some pictures of the legend that will help you navigate your newly-transformed keyboard, and some other picture of Moon Tunes in action!
+
+<p><img alt = "MoonTunes Title" width=60% height=60% src="https://imgur.com/uml47fR.png">
+ </p>
