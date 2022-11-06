@@ -17,5 +17,12 @@ Moon Tunes is a pretty simple concept but that's what makes it great! As of righ
 
 Below are some pictures of the legend that will help you navigate your newly-transformed keyboard, and some other picture of Moon Tunes in action!
 
-<p><img alt = "MoonTunes Title" width=60% height=60% src="https://imgur.com/uml47fR.png">
+<p><img alt = "MoonTunes Title" width=100% height=100% src="https://imgur.com/sgnvnOS.png">
  </p>
+<p> Here you can see the keyboard legend which correspond to different musical groupings:</p>
+
+- First 7 keys are vocal chop scales (do, re, mi, etc.)
+- Next 4 are ambient wavy noises
+- Next 3 are collections of flutes harps and whistles
+- Next 2 are techy beeps and bops
+- Last 3 are more complete, such as reverbed piano, drum n base loops, and drum synths
