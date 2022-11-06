@@ -91,6 +91,12 @@ function App() {
     if(AudioPlay) {
       AudioPlay.play();
     }
+
+    //volume bar
+    let volume = document.querySelector("#volume_control");
+      volume.addEventListener("input", function(e) {
+      AudioPlay.volume = e.currentTarget.value / 100;
+    })
     
   });
 

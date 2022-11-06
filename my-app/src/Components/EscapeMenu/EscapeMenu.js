@@ -30,6 +30,10 @@ return () => {
                 <div class="aboutLink">
                   <h1 class="aboutLink"> <Link to="/About"> About </Link> </h1>
                 </div>
+
+                <input type="range" class="volumeControl" min="0" max="100" value="50">volume
+                </input>
+                
                 <a href="https://github.com/BillyMerchan/SpaceVis_HACKRPI2022">
                   <img src={gitLogo} alt="github.com/BillyMerchan/SpaceVis_HACKRPI2022" width="100" height="100" class="gitLink"/>
                 </a>
@@ -41,6 +45,10 @@ return () => {
               <div class="aboutLink">
                   <h1 class="aboutLink"> <Link to="/About"> About </Link> </h1>
                 </div>
+
+                <input type="range" class="volumeControl" min="0" max="100" value="50">volume
+                </input>
+
                 <a href="https://github.com/BillyMerchan/SpaceVis_HACKRPI2022">
                   <img src={gitLogo} alt="github.com/BillyMerchan/SpaceVis_HACKRPI2022" width="100" height="100" class="gitLink"/>
                 </a>
