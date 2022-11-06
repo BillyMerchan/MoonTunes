@@ -1,3 +1,11 @@
+*{
+  overflow:hidden;
+}
+
+.body{
+  overflow:hidden;
+}
+
 .App {
   background-image: url(./space.jpg);
   background-size:cover;
@@ -5,8 +13,124 @@
   height:100vh;
   text-align: center;
   background-repeat: no-repeat;
+  overflow:hidden;
 }
 
+.canvas {
+  overflow:hidden;
+  width:100vw;
+  height:100vh;
+}
+
+.com1 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: com1;
+  animation-duration:1.3s;
+  animation-fill-mode: forwards;
+  right:-20;
+  top:-20;
+  overflow:hidden;
+  transform: rotate(30deg);
+}
+
+@keyframes com1 {
+  0%{top:0;
+     right:-20vw;
+    }
+  100%{top:40vh;
+       right:110vw;}
+}
+
+
+.com2 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: com2;
+  animation-duration:.8s;
+  animation-fill-mode: forwards;
+  left:-10vw;
+  top:-30vh;
+  overflow:hidden;
+  transform: rotate(35deg);
+}
+
+@keyframes com2 {
+  0%{left:-10vw;
+     top:-30vh;}
+  100%{left:40vw;
+       top:120vh}
+}
+
+.com3 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: com3;
+  animation-duration:1.4s;
+  animation-fill-mode: forwards;
+  right:-40vw;
+  top:-100px;
+  overflow:hidden;
+  transform: rotate(0deg);
+  filter:hue-rotate(110deg);
+}
+
+@keyframes com3 {
+  0%{right:-20vw;
+     top:-20vh;}
+  100%{right:40vw;
+       top:120vh}
+}
+
+.com4 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: com4;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+  right:-40vw;
+  top:-100px;
+  overflow:hidden;
+  transform: rotate(90deg);
+  filter:hue-rotate(110deg);
+}
+
+@keyframes com4 {
+  0%{right:-20vw;
+     top:-20vh;}
+  100%{right:40vw;
+       top:120vh}
+}
+
+.com5 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: com5;
+  animation-duration:1.4s;
+  animation-fill-mode: forwards;
+  left:-40vw;
+  top:-100px;
+  overflow:hidden;
+  transform: rotate(-90deg);
+  filter:hue-rotate(280deg);
+}
+
+@keyframes com5 {
+  0%{left:-40vw;
+     top:-20vh;}
+  100%{left:40vw;
+       top:120vh}
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -18,6 +142,250 @@
   }
 }
 
+.com6 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: com6;
+  animation-duration:.7s;
+  animation-fill-mode: forwards;
+  right:40vw;
+  top:-100px;
+  overflow:hidden;
+  transform: rotate(-320deg);
+  filter:hue-rotate(290deg);
+}
+
+@keyframes com6 {
+  0%{right:40vw;
+     top:-20vh;}
+  100%{right:20vw;
+       top:120vh}
+}
+
+.com7 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: com7;
+  animation-duration:1.4s;
+  animation-fill-mode: forwards;
+  right:60vw;
+  top:-100px;
+  overflow:hidden;
+  transform: rotate(290deg);
+  filter:hue-rotate(30deg);
+}
+
+@keyframes com7 {
+  0%{right:60vw;
+     top:-20vh;}
+  100%{right:30vw;
+       top:120vh}
+}
+
+
+.pla1 {
+  position:absolute;
+  width:400px;
+  height:400px;
+  opacity:1;
+  animation-name: pla1;
+  animation-duration:4s;
+  animation-fill-mode: forwards;
+  right:70vw;
+  top:10vh;
+  overflow:hidden;
+  transform: rotate(0deg);
+  filter:hue-rotate(110deg);
+  scale:1;
+}
+
+@keyframes pla1 {
+  0%{scale: 1;
+     opacity: 0;}
+  50%{scale:1.50;
+       opacity:1}
+  100%{scale:1.0;
+      opacity:0;
+      }
+}
+
+.pla2 {
+  position:absolute;
+  width:200px;
+  height:200px;
+  opacity:1;
+  animation-name: pla1;
+  animation-duration:4s;
+  animation-fill-mode: forwards;
+  right:30vw;
+  top:40vh;
+  overflow:hidden;
+  transform: rotate(0deg);
+  filter:hue-rotate(110deg);
+  scale:1;
+}
+
+@keyframes pla2 {
+  0%{scale: 1;
+     opacity: 0;}
+  50%{scale:1.50;
+       opacity:1}
+  100%{scale:1.0;
+      opacity:0;
+      }
+}
+
+.pla3 {
+  position:absolute;
+  width:300px;
+  height:300px;
+  opacity:1;
+  animation-name: pla3;
+  animation-duration:4s;
+  animation-fill-mode: forwards;
+  right:50vw;
+  top:50vh;
+  overflow:hidden;
+  transform: rotate(0deg);
+  filter:hue-rotate(110deg);
+  scale:1;
+}
+
+@keyframes pla3 {
+  0%{scale: 1;
+     opacity: 0;}
+  50%{scale:1.50;
+       opacity:1}
+  100%{scale:1.0;
+      opacity:0;
+      }
+}
+
+.pla4 {
+  position:absolute;
+  width:700px;
+  height:700px;
+  opacity:1;
+  animation-name: pla4;
+  animation-duration:4s;
+  animation-fill-mode: forwards;
+  right:20vw;
+  top:50vh;
+  overflow:hidden;
+  transform: rotate(0deg);
+  filter:hue-rotate(110deg);
+  scale:1;
+}
+
+@keyframes pla4 {
+  0%{scale: 1;
+     opacity: 0;}
+  50%{scale:1.50;
+       opacity:1}
+  100%{scale:1.0;
+      opacity:0;
+      }
+}
+
+.pla5 {
+  position:absolute;
+  width:170px;
+  height:170px;
+  opacity:1;
+  animation-name: pla3;
+  animation-duration:4s;
+  animation-fill-mode: forwards;
+  right:10vw;
+  top:50vh;
+  overflow:hidden;
+  transform: rotate(0deg);
+  filter:hue-rotate(110deg);
+  scale:1;
+}
+
+@keyframes pla5 {
+  0%{scale: 1;
+     opacity: 0;}
+  50%{scale:1.50;
+       opacity:1}
+  100%{scale:1.0;
+      opacity:0;
+      }
+}
+
+.sta1 {
+  position:absolute;
+  width:170px;
+  height:170px;
+  opacity:1;
+  animation-name: sta1;
+  animation-duration:.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  right:18vw;
+  top:50vh;
+  overflow:hidden;
+  transform: rotate(0deg);
+  filter:hue-rotate(110deg);
+  scale:1;
+}
+
+@keyframes sta1 {
+  0%{scale: 1;
+     opacity: 0;}
+  20%{scale:1.50;
+       opacity:1}
+  40%{scale:1.1;
+      opacity:1;
+      }
+  60%{scale: 1.5;
+     opacity: 1;}
+  80%{scale:1.0;
+       opacity:1}
+  100%{scale:1.5;
+      opacity:1;
+      }
+}
+
+.sta2 {
+  position:absolute;
+  width:140px;
+  height:140px;
+  opacity:1;
+  animation-name: sta1;
+  animation-duration:.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  right:78vw;
+  top:50vh;
+  overflow:hidden;
+  transform: rotate(0deg);
+  filter:hue-rotate(110deg);
+  scale:1;
+}
+
+@keyframes sta2 {
+  0%{scale: 1;
+     opacity: 0;}
+  20%{scale:1.50;
+       opacity:1}
+  40%{scale:1.1;
+      opacity:1;
+      }
+  60%{scale: 1.5;
+     opacity: 1;}
+  80%{scale:1.0;
+       opacity:1}
+  100%{scale:1.5;
+      opacity:1;
+      }
+}
+
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -26,6 +394,41 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow:hidden;
+}
+
+.sta3 {
+  position:absolute;
+  width:110px;
+  height:110px;
+  opacity:1;
+  animation-name: sta1;
+  animation-duration:.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  right:48vw;
+  top:20vh;
+  overflow:hidden;
+  transform: rotate(0deg);
+  filter:hue-rotate(110deg);
+  scale:1;
+}
+
+@keyframes sta3 {
+  0%{scale: 1;
+     opacity: 0;}
+  20%{scale:1.50;
+       opacity:1}
+  40%{scale:1.1;
+      opacity:1;
+      }
+  60%{scale: 1.5;
+     opacity: 1;}
+  80%{scale:1.0;
+       opacity:1}
+  100%{scale:1.5;
+      opacity:1;
+      }
 }
 
 .App-link {
