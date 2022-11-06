@@ -37,6 +37,18 @@ return () => {
                  <h1 class="escPrompt">~Escape To Jump In~</h1>
        </div>
     }
+      {!open && <div class="escapeMenuClose">
+              <div class="aboutLink">
+                  <h1 class="aboutLink"> <Link to="/About"> About </Link> </h1>
+                </div>
+                <a href="https://github.com/BillyMerchan/SpaceVis_HACKRPI2022">
+                  <img src={gitLogo} alt="github.com/BillyMerchan/SpaceVis_HACKRPI2022" width="100" height="100" class="gitLink"/>
+                </a>
+                 <img src={keebLegend} alt="mapping of keyboard keys" width="900" height="900"/>
+                 <h1 class="escPrompt">~Escape To Jump In~</h1>
+       </div>
+
+      }
     </div>
   );
 
